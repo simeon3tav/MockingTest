@@ -21,7 +21,7 @@ namespace MockingTest.Controllers
         public ActionResult Index()
         {
             var contacts = _contactService.GetAllContacts();
-
+             
             var viewModel = new List<ContactViewModel>(from contact in contacts
                                                        select new ContactViewModel()
                                                        {
