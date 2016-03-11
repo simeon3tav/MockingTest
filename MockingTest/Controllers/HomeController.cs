@@ -18,7 +18,7 @@ namespace MockingTest.Controllers
             this._contactService = contactService;
         }
 
-        public ActionResult Index()
+        public ActionResult Index()  
         {
             var contacts = _contactService.GetAllContacts();
              
